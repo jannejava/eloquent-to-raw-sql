@@ -1,0 +1,38 @@
+{
+    "name": "eastwest/eloquent-to-raw-sql",
+    "description": "This is my package EloquentToRawSql",
+    "keywords": [
+        "eastwest",
+        "laravel",
+        "eloquent-to-raw-sql"
+    ],
+    "homepage": "https://github.com/jannejava/eloquent-to-raw-sql",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Östlund",
+            "email": "janne@eastwest.se",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/contracts": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eastwest\\EloquentToRawSql\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Eastwest\\EloquentToRawSql\\EloquentToRawSqlServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
