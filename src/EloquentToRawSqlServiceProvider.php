@@ -17,6 +17,10 @@ class EloquentToRawSqlServiceProvider extends ServiceProvider
 
     protected function addMacro()
     {
+        // Original idea by @therobfonz
+        // https://twitter.com/kirschbaum_dev/status/1418590965368074241
+        // Refined by BinaryKitten
+        // https://gist.github.com/BinaryKitten/2873e11daf3c0130b5a19f6b94315033
         QueryBuilder::macro(
             'toRawSql',
             function () {
