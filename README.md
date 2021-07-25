@@ -19,3 +19,8 @@ dump($user);
 
 ```
 
+## How to install
+
+`composer require eastwest/eloquent-to-raw-sql`
+
+
