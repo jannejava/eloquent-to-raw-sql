@@ -33,7 +33,7 @@ class EloquentToRawSqlServiceProvider extends ServiceProvider
                         return preg_replace(
                             '/\?/',
                             is_string($binding) ? "'" . $binding . "'" : $binding,
-                            $sql,
+                            str_replace('"', '',$sql),
                             1
                         );
                     },
